@@ -2,6 +2,14 @@
 
 
 ## 0. Develop Environment
+```
+Docker Image
+- tensorflow/tensorflow:tensorflow:2.4.0-gpu-jupyter
+
+Library
+- Pytorch : Stable (1.7.1) - Linux - Python - CUDA (11.0)
+```
+- Using Single GPU (not tested on cpu only)
 
 
 ## 1. Explain about Implementation
