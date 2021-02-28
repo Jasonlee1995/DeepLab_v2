@@ -13,6 +13,16 @@ Library
 
 
 ## 1. Explain about Implementation
+- model.py : ResNet-101 ASPP, DenseCRF, DeepLab v2
+- train.py : train ResNet-101 ASPP only (grid search on model.py)
+- utils.py : calculate mIoU
+- Used similar train settings of paper when training VGG-16 Large FOV
+  * input : (3, 256, 256)
+  * batch size : 10
+  * learning rate : 0.001
+  * momentum : 0.9
+  * weight decay : 0.0005
+- mIoU score may be quite different with paper cause of lack of pre-trained model weight on MS-COCO
 
 
 ## 2. Brief Summary of *'DeepLab: Semantic Image Segmentation with Deep Convolutional Nets, Atrous Convolution, and Fully Connected CRFs'*
